@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Permanent+Marker&family=Qwitcher+Grypen:wght@400;700&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Permanent+Marker&family=Qwitcher+Grypen:wght@400;700&family=Teko:wght@300..700&display=swap');
+@import 'animate.css';
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+ }
+ body {
+    background-color: black;
+    color: white;
+    font-family: inter;
+ }
+ 
+ a{
+    text-decoration: none;
+    color: grey;
+ }
+
+ a:hover{
+    color: white;
+ }
+ #github{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: teko;
+    color: white;
+    
+    }
+#github:hover{
+    color: grey;
+    
+}
+ ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    
+    
+ }
+ #menu{
+    background-color: rgb(32, 30, 30);
+    
+    
+ }
+ span{
+    font-family: teko;
+    
+
+    
+    
+    
+ }
+ nav {
+    
+    max-width: 1120px;
+    padding: 24px 160px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+
+
+ }
+ #logo{
+    font-size: 50px;
+    text-transform: uppercase;
+
+ }
+ #menu2{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,33,30,1) 100%, rgba(0,0,0,1) 100%);
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    
+ }
+ #introducao {
+    font-family: inter;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content:center;
+    align-items:center;
+    margin-left: 100px;
+ }
+ 
+  #container > h1 {
+    font-size: 60px;
+  }
+  #container > h2 {
+    margin-top: 5px;
+  }
+
+  #botao{
+    background-color: #038C3E;
+    font-family: teko;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: none;
+   
+  }
+  #botao:hover {
+    letter-spacing: 1px;
+    background-color:  #025951;
+    
+
+  }
+  #botao:active {
+    letter-spacing: 1px;
+    background-color:  #025951;
+    transform: translateY(10px);
+    transition: 100ms;
+
+  }
+  #especialidades{
+   background: black;
+   height: 500px;
+
+  }
+  #especialidades1{
+   font-size: 70px;
+   font-family: teko;
+   color: white;
+   text-align: center;
+   padding-top: 40px;
+   
+  }
+  #skills {
+   margin: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 50px;
+
+  }
+  .item{
+   
+   background-color: black;
+   border-radius: 40px;
+   height: 300px;
+   width: 400px;
+   padding: 15px;
+   margin: 45px;
+   text-align: center;
+   animation: pulse; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 5s; /* don't forget to set a duration! */
+  
+  }
+  .item:hover{
+
+   box-shadow:0px 0px 7px 5px rgb(113, 113, 113);
+   animation: pulse; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 5s; /* don't forget to set a duration! */
+   
+   
+  }
+
+  .item::after {
+   animation: pulse; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 5s; /* don't forget to set a duration! */
+   
+  }
+  .item > h2 {
+   margin: 20px;
+  }
+  
+  .item > img {
+   height: 80px;
+   width: 50pz;
+   text-align: center;
+  }
+
+  
+
+
+
+
+
+ 
+  
+  
+
+  
