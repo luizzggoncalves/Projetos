@@ -1,7 +1,17 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Permanent+Marker&family=Qwitcher+Grypen:wght@400;700&family=Teko:wght@300..700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Permanent+Marker&family=Qwitcher+Grypen:wght@400;700&family=Teko:wght@300..700&display=swap');
+
 @import 'animate.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Permanent+Marker&family=Qwitcher+Grypen:wght@400;700&family=Teko:wght@300..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+
  * {
     margin: 0px;
     padding: 0px;
@@ -18,10 +28,13 @@
  a{
     text-decoration: none;
     color: grey;
+    display: inline-block;
+    transition: .2s;
  }
 
  a:hover{
     color: white;
+    transform: scale(1.2);
  }
  #github{
     text-transform: uppercase;
@@ -75,8 +88,8 @@
  }
  #menu2{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,33,30,1) 100%, rgba(0,0,0,1) 100%);
-    height: 700px;
+    background: linear-gradient(53deg, rgba(0,0,0,1) 0%, rgba(1,22,20,1) 100%, rgba(0,0,0,1) 100%);
+    padding: 100px 100px 200px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,7 +102,7 @@
     flex-direction: column;
     gap: 50px;
     justify-content:center;
-    align-items:center;
+    align-items:left;
     margin-left: 100px;
  }
  
@@ -101,7 +114,7 @@
   }
 
   #botao{
-    background-color: #038C3E;
+    background-color:rgb(19, 205, 19);
     font-family: teko;
     font-weight: 600;
     margin-top: 20px;
@@ -114,75 +127,235 @@
   }
   #botao:hover {
     letter-spacing: 1px;
-    background-color:  #025951;
+    background-color:rgb(19, 205, 19);
     
 
   }
   #botao:active {
     letter-spacing: 1px;
-    background-color:  #025951;
+    background-color:  rgb(19, 205, 19);
     transform: translateY(10px);
     transition: 100ms;
 
   }
   #especialidades{
    background: black;
-   height: 500px;
+   
 
   }
   #especialidades1{
-   font-size: 70px;
+   font-size: 75px;
    font-family: teko;
    color: white;
    text-align: center;
    padding-top: 40px;
    
   }
+  #especialidades1 > span {
+   color:  rgb(19, 205, 19);
+  }
   #skills {
    margin: 10px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-items: center;
+   align-items:center;
    gap: 50px;
+   
 
   }
   .item{
    
    background-color: black;
    border-radius: 40px;
-   height: 300px;
+   height: 400px;
    width: 400px;
-   padding: 15px;
-   margin: 45px;
+   padding: 20px;
+   margin: 60px;
    text-align: center;
-   animation: pulse; /* referring directly to the animation's @keyframe declaration */
-   animation-duration: 5s; /* don't forget to set a duration! */
+   transition: .2s;
+   
+
   
   }
   .item:hover{
 
-   box-shadow:0px 0px 7px 5px rgb(113, 113, 113);
-   animation: pulse; /* referring directly to the animation's @keyframe declaration */
-   animation-duration: 5s; /* don't forget to set a duration! */
+   box-shadow:0px 0px 5px 5px rgba(113, 113, 113, 0.534);
+   
+   transform: scale(1.1);
    
    
   }
 
-  .item::after {
-   animation: pulse; /* referring directly to the animation's @keyframe declaration */
-   animation-duration: 5s; /* don't forget to set a duration! */
-   
-  }
   .item > h2 {
-   margin: 20px;
+   margin: 25px;
+   font-size: 35px;
+   font-family: "Figtree", sans-serif;
   }
   
   .item > img {
    height: 80px;
-   width: 50pz;
-   text-align: center;
+   width: 50pz;   
+   text-align: center;}
+
+   .item > p {
+      font-family: "Figtree", sans-serif;
+   }
+
+   .sobre {
+   background: rgb(0,0,0);
+   background: linear-gradient(183deg, rgb(0, 0, 0) 0%, rgb(1, 13, 12) 100%, rgb(0, 0, 0) 100%);
+   height: 800px;
+   
+   }
+   .imgsobre {
+     
+      height: 0px;
+   }
+
+  .imgsobre > img {
+   height: 400px;
+   width: 400px;
+   margin: 100px;
+   border-radius: 80px;
+   
+   
+   
+   
+  
+   
   }
+  
+  .textosobre {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   padding: 150px 100px 230px 500px;
+   margin: 200px;
+   margin-top: 0px;
+   text-align: justify;
+
+  }
+
+  .textosobre > h2 {
+   font-size: 50px;
+   font-family: teko;
+
+  }
+  .textosobre > h2 > span{
+  color:rgb(19, 205, 19);
+}
+
+.textosobre > p {
+   font-size: 17px;
+   font-family: "Figtree", sans-serif;
+   font-weight:510px;
+   font-size: 20px
+
+}
+
+.btn-icone button {
+
+   
+   height: 55px;
+   width: 55px;
+   font-size: 30px;
+   border-radius: 20px;
+   color:  rgb(19, 205, 19);
+   background-color: black;
+   border-color:rgb(19, 205, 19) ;
+   box-shadow: 1px 1px 7px 1px rgb(19, 205, 19);
+
+}
+
+.btn-icone > a {
+   margin-left: 20px;
+   
+}
+
+.meuprojeto  {
+   font-size: 50px;
+   font-family: teko;
+   text-align: center;
+
+
+
+}
+.meuprojeto >  span {
+color:rgb(19, 205, 19);
+}
+   
+section.portifolio {
+   padding: 80px 4%;
+   box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.07);
+}
+.flex {
+   margin-top: 60px;
+   display: flex;
+   flex-direction: row;
+   gap: 60px;
+   justify-content: center;
+
+}
+
+.img-port {
+   width: 360px;
+   height: 460px;
+   background-color: rgba(19, 205, 19, 0.385);
+}
+
+
+
+
+
+
+
+
+section.formulario {
+   padding: 80px 4%;
+   box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.07);
+
+}
+
+
+form {
+   display: flex;
+   flex-direction:column;
+   gap: 25px;
+   align-items: center;
+   margin-top: 30px;
+   font-size: 50px;
+}
+form > input {
+   background-color: rgba(255, 255, 255, 0.219);
+   padding: 40px;
+   width: 500px;
+   height: 50px;
+   border: none;
+   font-size: 17px;
+   border-radius: 30px;
+ 
+}
+form > textarea {
+   background-color: rgba(255, 255, 255, 0.219);
+   padding: 40px;
+   width: 500px;
+   border: none;
+   font-size: 17px;
+   font-size: 17px;
+   border-radius: 30px;
+   resize: none;
+   max-width: 500px;
+
+}
+
+
+
+
+
+
+
 
   
 
@@ -192,6 +365,4 @@
 
  
   
-  
-
   
